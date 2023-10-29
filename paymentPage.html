@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>payment for order</title>
+</head>
+
+
+<body>
+    <div class="over-lay"></div>
+    <!-- ///////////////////////////////////////////////////////////// -->
+    <!-- Header Section -->
+    <header>
+        <h1 class="container"></h1>
+    </header>
+    <div class="sub-heading-section container ">
+        <div class="sub-heading-container">
+            <div class="left-container">
+                <h4>Pay on delivery</h4>
+
+            </div>
+            <div class="right-container">
+                <h4>Pay with Card</h4>
+                <p>Currently not available</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+    <!-- Product summary section -->
+
+    <div class=" product-summary-section container ">
+        <div class="product-summary-container ">
+            <div class="img-section ">
+                <img id="deliveryImg" src="" alt=" ">
+            </div>
+            <div class="texts-section ">
+                <p id="deliveryText"></p>
+                <p id="deliveryExtraText"></p>
+            </div>
+        </div>
+    </div>
+    <p class="form-note container"> Please enter your details for delivery <br><span> " note that your order will be out for delivery after 4 days of submitting this form "</span></p>
+    <div class=" form-section container ">
+        <span id="errorMessage" class="container" style="color: red; font-size: .7rem;"></span>
+        <form id="myForm" action=" ">
+            <div class="over-lay"></div>
+            <div class="name-div div ">
+                <label for="name ">Name:</label> <span style="color: red;">*</span>
+                <br>
+                <input type="text " name=" " id="inputField " placeholder="John Doe" required>
+            </div>
+
+            <div class="email-div div ">
+                <label for="email ">Email :</label> <span style="color: red;">*</span>
+                <br>
+                <input type="email " name=" " id="inputField " placeholder="Johndoe@mail.com" required>
+            </div>
+
+            <div class="phone-div div ">
+                <label for="phone ">Phone Number :</label> <span style="color: red;">*</span>
+                <br>
+                <input type="number" name=" " id="inputField " placeholder="+234352627383" required>
+            </div>
+            <div class="quantity-div div ">
+                <label for="quantity ">Quantity of item :</label> <span style="color: red;">*</span>
+                <br>
+                <input type="number" name=" " id=" Quantity-of-item-inputField" placeholder="" required>
+            </div>
+
+            <div class="address-div div ">
+                <label for="address ">Address :</label> <span style="color: red;">*</span> <br>
+                <input type="text " name=" " id=" inputField" placeholder="" required>
+            </div>
+
+            <div class="delivery-address-div div ">
+                <label for="deliveryAddress ">Delivery Address :</label> <span style="color: red;">*</span><br>
+                <input type="text " name=" " id="inputField " placeholder="" required>
+            </div>
+
+
+            <div class="totalSummary div ">
+                <p>Recieved by : Dc computers</p>
+                <p>Total sum: $
+                    <p id="deliveryPrice">300</p>
+                </p>
+            </div>
+
+
+    </div>
+
+    <div class="desktop-submit-btn submit-con container">
+        <input class="submitBtn" type="submit" value="Submit">
+    </div>
+
+
+    </form>
+    <!-- ///////////////////////////////////////////////////////////////////////// -->
+    <!-- Thank you section -->
+    <div class="thank-you-popUp-section ">
+        <div class="thank-you-pop-container container">
+            <img src="./imgaes/done-icon.svg" alt="">
+            <h2>Thank you</h2>
+            <p>We've recieved your order, a confirmation mail will be sent to you shortly.</p>
+            <a href="./index.html"><input type="button" value="&larr;Home"></a>
+        </div>
+    </div>
+    <div class="footer ">
+        <p class="container ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt a ad, magni dolores assumenda odit explicabo animi voluptatum quo distinctio at repellat dicta iustovoluptates doloremque esse commodi sint.</p>
+    </div>
+    <script src="./paymentPageScript.js">
+    </script>
+</body>
+
+</html>
